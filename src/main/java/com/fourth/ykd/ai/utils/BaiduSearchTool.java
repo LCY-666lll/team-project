@@ -78,7 +78,7 @@ public class BaiduSearchTool {
             模型自身知识无法回答的问题时调用此工具。""")
     public String search(
             @ToolParam(description = "搜索关键词，例如'今天北京天气'、'最新AI新闻'") String query,
-            @ToolParam(description = "返回结果数量，默认10条，最多50条") Integer num
+            @ToolParam(description = "返回结果数量，默认5条，最多10条") Integer num
     ) {
         // 1. 参数校验
         if (query == null || query.trim().isEmpty()) {
